@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Howard Zilber |Work |Drama</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../../src/images/howardzilber_website_512x512_icon.png">
+        <link rel="stylesheet" href="../../css/body.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous">
+            </script>
+            <script> 
+                $(function(){
+                $("#header").load("../header.html"); 
+                $("#footer").load("../footer.html"); 
+                });
+            </script>
+            <style>
+                #dropdown-btn {
+                    background-color: #A32B4A;
+                    pointer-events: none;
+                }
+                #dropdown-content {
+                    visibility: visible;
+                    left: -120px;
+                    text-align-last: right;
+                }
+                #dropdown-content li {
+                    left: 0;
+                }
+                #dropdown:hover #dropdown-btn > #arrow {
+                    transform: rotate(0deg);
+                }
+                #drama {
+                    background-color: #A32B4A;
+                    pointer-events: none;
+                }
+
+            </style>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="section1">
+            <h1>Introduction to Drama</h1>
+            <iframe type="text/html" src="https://docs.google.com/document/d/e/2PACX-1vRRqZUsO4p1ch38KbpTHKl9P3FNnTIVgOzoL7xMm_UrCNJEy2U-EPxCbc9Sie54_w/pub?embedded=true" width="1200px" height="1000px" frameborder="0" scrolling="no" style="background-color: transparent; overflow:hidden; margin-left: 140px"></iframe>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
