@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Howard Zilber |About</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../../src/images/howardzilber_website_512x512_icon.png">
+        <link rel="stylesheet" href="../../css/body.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous">
+            </script>
+            <script> 
+                $(function(){
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+                });
+            </script>
+            <style>
+                #about {
+                    background-color: #CA57AD;
+                }
+                #about {
+                    pointer-events: none;
+                }
+            </style>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div style="padding:20px; padding-bottom:0px; font-size:30px;margin-top:35px;">
+            <h1>A Letter from the Artist</h1>            
+            <iframe type="text/html" src="https://docs.google.com/document/d/e/2PACX-1vT4Sw_LzM15gWerrLKzMV-ZmEy4J1X5n_MQHGDMIfTUV3pnV5OLQ80HJDk1TdVaWWp9oH6aRLFpWC3u/pub?embedded=true" allowtransparency="true" marginwidth="0px" marginheight="0px" width="1200px" height="1000px" frameborder="0" scrolling="no" style="overflow:hidden; margin-left: 40px; background-color: transparent"></iframe>
+        </div>
+            <div style="position: absolute; top: 300px; left: 1240px; z-index: 0">
+                <img src="../../src/images/howardzilber_headshot.png" alt="headshot of Howard Zilber">
+                <p>Howard Zilber</p>
+            </div>
+        <div id="footer"></div>
+    </body>
+</html>

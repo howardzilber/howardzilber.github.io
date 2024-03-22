@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Howard Zilber |Contact</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../../src/images/howardzilber_website_512x512_icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+            });
+        </script> 
+        <style>
+            #contact {
+                background-color: #3EC9F6;
+            }
+            #contact {
+                pointer-events: none;
+            }
+            body {
+                margin: 0;
+                background-color: #3EC9F6;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="form" style="padding:20px;font-size:30px;margin-top:40px;">
+            <form id="form-id" class="form-class" method="post" action="../../php/contact-form-process.php">
+                <div class="form-group">
+                <h1>Contact Form</h1>
+                <label for="Name" class="label">Your name</label>
+                    <div class="input-group">
+                        <input type="text" id="Name" name="Name" class="form-control" required>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px" class="form-group">
+                <label for="Email" class="label">Your email address</label>
+                    <div class="input-group">
+                        <input type="email" id="Email" name="Email" class="form-control" required>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px" class="form-group">
+                <label for="Message" class="label">Your message</label>
+                    <div style="margin-top: 10px" class="input-group">
+                        <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; margin-bottom: 35px" class="form-group">
+                    <button type="submit" id="button" class="btn btn-primary btn-lg btn-block">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
