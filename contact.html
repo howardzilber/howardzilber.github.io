@@ -24,39 +24,23 @@
             }
             body {
                 margin: 0;
-                background-color: #3EC9F6;
+                background-color: #ffffff;
             }
         </style>
     </head>
     <body>
         <div id="header"></div>
         <div id="form" style="padding:20px;font-size:30px;margin-top:40px;">
-            <form id="form-id" class="form-class" method="post" action="../../php/contact-form-process.php">
-                <div class="form-group">
-                <h1>Contact Form</h1>
-                <label for="Name" class="label">Your name</label>
-                    <div class="input-group">
-                        <input type="text" id="Name" name="Name" class="form-control" required>
-                    </div>
-                </div>
-
-                <div style="margin-top: 30px" class="form-group">
-                <label for="Email" class="label">Your email address</label>
-                    <div class="input-group">
-                        <input type="email" id="Email" name="Email" class="form-control" required>
-                    </div>
-                </div>
-
-                <div style="margin-top: 30px" class="form-group">
-                <label for="Message" class="label">Your message</label>
-                    <div style="margin-top: 10px" class="input-group">
-                        <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-
-                <div style="margin-top: 20px; margin-bottom: 35px" class="form-group">
-                    <button type="submit" id="button" class="btn btn-primary btn-lg btn-block">Send Message</button>
-                </div>
+            <form action="https://formspree.io/f/xqkrdown" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label><br>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label><br>
+                <button type="submit">Send</button>
             </form>
         </div>
         <div id="footer"></div>
