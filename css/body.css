@@ -1,9 +1,6 @@
 :root {
     --primary-color: #E33C67;
     --secondary-color: #A32B4A;
-    --gradient1-color: #935560;
-    --gradient2-color: #814A54;
-    --gradient3-color: #6E4048;
 }
 
 h1 {
@@ -19,41 +16,4 @@ body {
     width: 100v%;
     z-index: -10;
     background-color: var(--primary-color);
-}
-
-.section1 {
-    padding-right: 20px;
-    padding-left: 15%;
-    padding-top: 75px;
-    padding-bottom: 20px;
-    background-color: var(--gradient1-color);
-    animation: slideLeft 0.8s ease forwards;
-}
-
-.section2 {
-    padding-right: 20px;
-    padding-left: 15%;
-    padding-top: 25px;
-    padding-bottom: 40px;
-    background-color: var(--gradient2-color);
-    animation: slideLeft 1.2s ease forwards;
-}
-
-.section3 {
-    padding-right: 20px;
-    padding-left: 15%;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    background-color: var(--gradient3-color);
-    animation: slideLeft 1.6s ease forwards;
-}
-
-@keyframes slideLeft {
-  0% {
-    left: 1400px;
-  }
-  100% {
-    left: 0vh;
-    position: relative;
-  }
 }
