@@ -18,3 +18,12 @@ body {
     background-color: var(--primary-color);
     animation: slideUp 0.6s ease forwards;
 }
+@keyframes slideUp {
+  0% {
+    bottom: -3000px;
+  }
+  100% {
+    top: 0vh;
+    position: fixed;
+  }
+}
