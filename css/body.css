@@ -1,6 +1,6 @@
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #A32B4A;
+    --secondary-color: #C2DEDC;
 }
 
 h1 {
@@ -16,14 +16,5 @@ body {
     width: 100v%;
     z-index: -10;
     background-color: var(--primary-color);
-    animation: slideUp 0.6s ease forwards;
 }
-@keyframes slideUp {
-  0% {
-    bottom: -3000px;
-  }
-  100% {
-    top: 0vh;
-    position: fixed;
-  }
 }
