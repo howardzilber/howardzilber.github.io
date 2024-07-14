@@ -4,8 +4,8 @@
        
 :root {
   --text-color: #000000;
-  --primary-color: #C2DEDC;
-  --secondary-color: #116A7B;
+  --primary-color: #405D72;
+  --secondary-color: #304656;
 }
 
 .navbar {
@@ -58,7 +58,7 @@
     margin-left: 3px;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-top: 10px solid #E9FAFF;
+    border-top: 10px solid #000000;
     transition: transform ease-in-out 0.3s;
 }
 
