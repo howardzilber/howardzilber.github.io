@@ -15,7 +15,8 @@
     left: 0;
     display: inline;
     z-index: 1;
-    top: 15vh;
+    height: 15vh;
+    top: 0;
 }
 
 .navbar a {
