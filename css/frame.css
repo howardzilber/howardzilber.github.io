@@ -649,7 +649,6 @@ hr {
   .logo {
     -webkit-tap-highlight-color: transparent;
   }
-}
 
   .menu .menu-button {
     display: flex;
@@ -752,7 +751,7 @@ hr {
     margin-bottom: 20px;
     margin-right: 0;
   }
-
+}
 
   @keyframes gradient {
   0% {
