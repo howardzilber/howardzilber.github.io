@@ -52,7 +52,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: #333333;
+  color: #ffffff;
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -66,23 +66,6 @@ h3 {
   padding: 0;
   font-weight: bold;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
-ul,
-ol {
-  margin: 10px 0 10px 0;
-}
-
-li ol,
-li ul {
-  margin: 0;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: rgb(220, 220, 220);
-  margin: 0 0 10px 0;
 }
 
 .menu-container {
