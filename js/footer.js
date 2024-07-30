@@ -2,6 +2,6 @@
   "use strict";
 
   $(function () {
-    $(".footer-container").load("/work/footer.html");
+    $(".footer-container").load("/footer.html");
   });
 })();
