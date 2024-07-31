@@ -773,6 +773,8 @@ h3 {
 				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
+				left: 50%;
+				margin: 0px 0px 50px 0px;
 			}
 
 				.tiles article > .image img {
@@ -813,7 +815,7 @@ h3 {
 				justify-content: center;
 				position: absolute;
 				top: 0;
-				left: -15px;
+				left: 120px;
 				width: 100%;
 				height: 100%;
 				padding: 1em;
@@ -847,6 +849,7 @@ h3 {
 					line-height: 1.5;
 					margin-top: 0.35em;
 					opacity: 0;
+					color: #37373b;
 				}
 
 					.tiles article > a .content > :last-child {
