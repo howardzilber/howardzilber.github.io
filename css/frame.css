@@ -814,7 +814,7 @@ h3 {
 				-ms-justify-content: center;
 				justify-content: center;
 				position: absolute;
-				top: 0;
+				top: -50px;
 				left: 120px;
 				width: 100%;
 				height: 100%;
