@@ -83,6 +83,10 @@ h3 {
   box-shadow: 0 0px 4px rgb(0 0 0 / 32%), 0 0px 10px rgb(0 0 0 / 23%);
 }
 
+.footer-container {
+	background-color: #292929;
+}
+
 .menu {
   position: relative;
   margin: 0 auto;
