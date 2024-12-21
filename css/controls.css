@@ -1,4 +1,31 @@
+.styled-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.styled-button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  
+}
+
+.styled-button i {
+  margin-right: 8px; 
+}
+
+.styled-button:focus {
+  outline: none;  
+}
 .custom-image-button {
   display: flex;
   flex-direction: column;
