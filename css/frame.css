@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #e0f7fa;
+  background-color: #F0F0F0;
   background-size: 400% 400%;
   animation: gradient 45s ease infinite;
   height: 100vh;
