@@ -15,6 +15,7 @@
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
   <style>
+    /* Container with max width and center alignment */
     .content-container {
       max-width: 900px;
       margin: 40px auto;
@@ -22,8 +23,11 @@
       background: white;
       border-radius: 8px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      box-sizing: border-box;
     }
 
+    /* Form elements styling */
     label {
       font-size: 1.1em;
       color: #555;
@@ -42,11 +46,13 @@
       font-size: 1em;
     }
 
+    /* Resizing for textarea */
     textarea {
       resize: vertical;
       min-height: 100px;
     }
 
+    /* Button styling */
     button[type="submit"] {
       background-color: #3498db;
       color: white;
@@ -62,11 +68,13 @@
       background-color: #2980b9;
     }
 
+    /* Social Media Section */
     .social-media-section {
       margin-top: 40px;
       text-align: center;
     }
 
+    /* Social media logo with hover effect */
     .social-media-section img {
       max-width: 100%;
       height: auto;
@@ -78,6 +86,7 @@
       transform: scale(1.1);
     }
 
+    /* Menu contact styles */
     .menu-contact {
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
@@ -85,6 +94,25 @@
       font-size: 1.2em;
     }
 
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+      /* Content container padding adjustment */
+      .content-container {
+        padding: 15px;
+      }
+
+      /* Input fields and textarea adjustments */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        font-size: 0.9em;
+      }
+
+      /* Social media section adjustments */
+      .social-media-section img {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -93,7 +121,7 @@
     <h1 style="color: white;">Howard Zilber | Contact</h1>
   </div>
 
-  <div class="content-container" style="overflow-x: hidden;">
+  <div class="content-container">
     <div class="content">
       <h3>Contact Form</h3>
       <form action="https://formspree.io/f/mrgnavrk" method="POST">
