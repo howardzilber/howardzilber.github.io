@@ -15,34 +15,59 @@
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
   <style>
+    
 .content-container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 30px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.signature {
+    font-style: italic;
+    text-align: left;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 1em;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .image {
-      display: block;
-      max-width: 250px;
-      border-radius: 50%;
-      margin: 20px auto;
-      border: 5px solid #2c3e50;
+
+    .content-container {
+        padding: 0 5px;
     }
 
     .content-table {
-      padding: 20px;
+        padding: 10px;
     }
-    .text {
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-
-    .signature {
-      margin-top: 30px;
-      font-style: italic;
-    }
+}
 
     .menu-about {
       color: rgb(255, 255, 255) !important;
@@ -59,38 +84,37 @@
     <h1 style="color: white;">Howard Zilber | About</h1>
   </div>
 
-  <div class="content-container">
-    <div class="content" style="overflow-x: hidden;">
-      <div class="content-table">
-        <h2>Letter from The Artist</h2>
-        <p class="text">
-          Friends,<br>
-          When I was very young, I read history and biography and was excited by politics. I wanted to help perfect the world through political action. But during my teenage years, it became obvious that my true interests and talents were intellectual and artistic. I formed a vague intention of being a writer.
-        </p>
-        <p class="text">
-          In college, I studied philosophy, and in graduate school as well. I began to have ideas I wanted to develop, but I knew that to do so I needed to further educate myself and gather life experience.
-        </p>
-        <p class="text">
-          The desire to write was still there. I assumed it would be fiction. But my early discarded stories were too self-conscious, idea-driven, and derivative. I read a book by Walter Kerr on the theatre that emphasized the mythic, larger-than-life quality of the best of drama. I was convinced.
-        </p>
-        <p class="text">
-          Since then, I have written many plays and musicals. And when I manage to get them before an audience, they are very well received. Over the years, some poetry and children’s stories sneaked in. In recent years, realizing that my philosophical ideas had matured, a clearer understanding of mortality nudged me into writing philosophy and Torah commentary.
-        </p>
-        <p class="text">
-          It may seem that I am writing too many things. I may be. But all the work I do, I feel compelled to do. I am much better at making work than marketing it, and I would much rather be at home writing than in a meeting. But I do not make my work just for me. I have a strong urge to share it with others. That explains why this website was created.
-        </p>
-        <p class="text">
-          Though I wish to share, all the work on this website is protected by copyright and cannot be used in a commercial way without my permission.
-        </p>
-        <p class="text">
-          That said, please look, read, listen, and enjoy. Any helpful comments would be appreciated, as would opportunities for collaboration. I would especially appreciate any help that gets this work a bit further into the world.
-        </p>
-        <p class="text signature">
-          I have two reasons I think I am here on earth: to be father to my daughter Zoey, and to make this work.<br><br>
-          All blessings,<br>
-          Howard
-        </p>
-
+ <div class="content-container">
+    <div class="content">
+        <div class="content-table">
+            <h2>Letter from The Artist</h2>
+            <p class="text">
+                Friends,<br>
+                When I was very young, I read history and biography and was excited by politics. I wanted to help perfect the world through political action. But during my teenage years, it became obvious that my true interests and talents were intellectual and artistic. I formed a vague intention of being a writer.
+            </p>
+            <p class="text">
+                In college, I studied philosophy, and in graduate school as well. I began to have ideas I wanted to develop, but I knew that to do so I needed to further educate myself and gather life experience.
+            </p>
+            <p class="text">
+                The desire to write was still there. I assumed it would be fiction. But my early discarded stories were too self-conscious, idea-driven, and derivative. I read a book by Walter Kerr on the theatre that emphasized the mythic, larger-than-life quality of the best of drama. I was convinced.
+            </p>
+            <p class="text">
+                Since then, I have written many plays and musicals. And when I manage to get them before an audience, they are very well received. Over the years, some poetry and children’s stories sneaked in. In recent years, realizing that my philosophical ideas had matured, a clearer understanding of mortality nudged me into writing philosophy and Torah commentary.
+            </p>
+            <p class="text">
+                It may seem that I am writing too many things. I may be. But all the work I do, I feel compelled to do. I am much better at making work than marketing it, and I would much rather be at home writing than in a meeting. But I do not make my work just for me. I have a strong urge to share it with others. That explains why this website was created.
+            </p>
+            <p class="text">
+                Though I wish to share, all the work on this website is protected by copyright and cannot be used in a commercial way without my permission.
+            </p>
+            <p class="text">
+                That said, please look, read, listen, and enjoy. Any helpful comments would be appreciated, as would opportunities for collaboration. I would especially appreciate any help that gets this work a bit further into the world.
+            </p>
+            <p class="text signature">
+                I have two reasons I think I am here on earth: to be father to my daughter Zoey, and to make this work.<br><br>
+                All blessings,<br>
+                Howard
+            </p>
         <img class="image" src="src/images/howardzilber_headshot.png" alt="Howard Zilber Headshot">
       </div>
     </div>
