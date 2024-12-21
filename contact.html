@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Howard Zilber |Contact</title>
+  <title>Howard Zilber | Contact</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" sizes="512x512" href="/src/images/icons/howardzilber.ico">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
@@ -16,41 +16,133 @@
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
   <style>
-    .menu-contact {
-      color: rgb(255, 255, 255) !important;
-      opacity: 1 !important;
-      font-weight: 700 !important;
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
     }
+
+    .menu-container {
+      background-color: #2c3e50;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      font-size: 1.8em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+
+    .social-media-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .social-media-section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+
+    .social-media-section img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-container {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="menu-container"></div>
+  <div class="menu-container">
+    <h1 style="color: white;">Howard Zilber | Contact</h1>
+  </div>
+
   <div class="content-container">
     <div class="content">
-      <div class="content-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h3>Contact Form</h3>
-            <form action="https://formspree.io/f/mrgnavrk" method="POST">
-              <label for="fname">First name:</label><br>
-              <input type="text" id="fname" name="fname" placeholder="John"><br>
-              <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname" placeholder="Doe"><br>
-              <label>Your email:</label><br>
-              <input type="email" name="email" placeholder="johndoe@gmail.com"><br>
-              <label>Your message:</textarea></label><br>
-              <textarea name="message" placeholder="[Insert message here]" style="height: 80px; width: 177px;"></textarea><br>
-              <button type="submit">Send</button>
-            </form>
-            <h3>Social Media</h3>
-             <a href="https://youtube.com/@howardzilber?si=JvPLT3QVKKWzuJoc" target="_blank"><img width ="400" border="0" margin="50px" align="center" src="/src/images/logos/yt_logo_rgb_dark.png"/></a>
-      </div>
+      <h3>Contact Form</h3>
+      <form action="https://formspree.io/f/mrgnavrk" method="POST">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="John">
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Doe">
+
+        <label>Your email:</label>
+        <input type="email" name="email" placeholder="johndoe@gmail.com">
+
+        <label>Your message:</label>
+        <textarea name="message" placeholder="Insert your message here..."></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="social-media-section">
+      <h3>Follow Me</h3>
+      <a href="https://youtube.com/@howardzilber?si=JvPLT3QVKKWzuJoc" target="_blank">
+        <img src="/src/images/logos/yt_logo_rgb_dark.png" alt="YouTube" width="400">
+      </a>
     </div>
   </div>
-    </div>
-  </div>
-  <div class="footer-container"></div>
+  <div class="footer-container"> </div>
 </body>
 
 </html>
