@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Howard Zilber |Work</title>
+  <title>Howard Zilber | Work</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="/src/images/icons/howardzilber.ico">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
@@ -15,10 +15,32 @@
   <script src="/js/menu.js"></script>
   <script src="/js/footer.js"></script>
   <style>
-    .dropbtn {
-      color: rgb(255, 255, 255) !important;
-      opacity: 1 !important;
-      font-weight: 700 !important;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 20px;
+    }
+    .gallery-item {
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .gallery-item p {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -28,57 +50,42 @@
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
-        <h2>About Me</h2>
-        <hr>
-          <p class="text">
-              <img class="image image-wrap-text max-width-400" src="images/ZoeyPhoto.jpg">
-              I am a third year engineering and theater double major at Smith College. My academic interests are primarily in biomedical engineering but I am open to other areas where I can build on my lab skills, coding and 3D modeling skills as well as my interest in medicine. With regards to theatre, I have experience in lighting, sound, props, set and design of those four areas.
-          <br> Current hobbies/interests: Cooking, guitars, ham radio, change bell ringing, video games, knife throwing, and photography/videography.
-          </p>
-        </div>
-        <!--End Intro-->
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <h2 id="list-of-projects">Featured</h2>
-            <hr>
+        <div class="gallery">
+          <div class="gallery-item">
+            <a href="childrenstores.html">
+              <img src="/src/images/childrenstores.jpg" alt="Children Stores">
+              <p>Children Stores</p>
+            </a>
           </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="images/everybodyposter.jpg">
+          <div class="gallery-item">
+            <a href="drama.html">
+              <img src="/src/images/drama.jpg" alt="Drama">
+              <p>Drama</p>
+            </a>
           </div>
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <h3><a class="highlight-text" href="https://www.smith.edu/news-events/news/everybody">Smith College Theatre: Everybody by Branden Jacob-Jenkins</a></h3>
-            <p class="text">
-              Directed by Kim Stauffer. Set designer Alina Tschumakow ’26, lighting designer Via Sussman ’26, faculty costume designer Kiki Smith, sound designer Zoey Zilber '25, props by Tamarin Camp ’25, and stage managed by Elie Berman ’25.
-            </p>
+          <div class="gallery-item">
+            <a href="philosophy.html">
+              <img src="/src/images/philosophy.jpg" alt="Philosophy">
+              <p>Philosophy</p>
+            </a>
           </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="images/smithlogo.jpg">
+          <div class="gallery-item">
+            <a href="poetry.html">
+              <img src="/src/images/poetry.jpg" alt="Poetry">
+              <p>Poetry</p>
+            </a>
           </div>
-          <div class="flex-item flex-item-stretch-4 flex-column">
-          <h3><a class="highlight-text">Attending Smith College</a></h3>
-            <p class="text"> 
-            I was accepted into Smith College early decision.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-600" src="images/bostonnews.jpg">
-          </div>
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <h3><a class="highlight-text" href="https://www.boston25news.com/news/hs-students-uncover-names-stories-of-patients-buried-in-unnamed-graves/888603965/">Boston News Article: HS students uncover names, stories of patients buried in unnamed graves</a></h3>
-            <p class="text">  
-            Boston News interview from highschool where we researched the stories of the ~300 people who were burried in Metfern Cemetery. I researched and wrote 40+ stories on these individuals which was put into a book about U.S. disability history, the Fernald school, and Metfern Cemetery. A website was also created which can be found <a href=”http://www.metfern.org/”>here</a>. The research involved coding a program which filtered out thousands of bios and documents when searching for the people on Ancestry.com
-            </p>
+          <div class="gallery-item">
+            <a href="torahcommentary.html">
+              <img src="/src/images/torahcommentary.jpg" alt="Torah Commentary">
+              <p>Torah Commentary</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-container"></div>
   </div>
+  <div class="footer-container"></div>
 </body>
+
 </html>
