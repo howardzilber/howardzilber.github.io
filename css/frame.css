@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(-45deg, #827790, #9b92a6, #b4adbc, #cdc8d3);
+  background-color: #e0f7fa;
   background-size: 400% 400%;
   animation: gradient 45s ease infinite;
   height: 100vh;
@@ -72,7 +72,7 @@ h3 {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #25274d;
+  background-color: #292929;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
