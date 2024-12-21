@@ -17,17 +17,14 @@
   <style>
     /* Container with max width and center alignment */
     .content-container {
-      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background: white;
       border-radius: 8px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      width: 100%;
       box-sizing: border-box;
     }
 
-    /* Form elements styling */
     label {
       font-size: 1.1em;
       color: #555;
@@ -122,7 +119,7 @@
   </div>
 
   <div class="content-container">
-    <div class="content" style="max-width: 95%;">
+    <div class="content" style="max-width: 95%; overflow-x: initial;">
       <h3>Contact Form</h3>
       <form action="https://formspree.io/f/mrgnavrk" method="POST">
         <label for="fname">First name:</label>
